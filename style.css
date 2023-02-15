@@ -2,3 +2,32 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-background {
+    display: flex;
+    margin: 0;
+    background-color: #303030;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#opening-logo {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+#opening-text {
+    padding: 10%;
+    flex: 1;
+    color: #D1D1D1;
+    font-size: 2em;
+    font-family: fantasy;
+}
