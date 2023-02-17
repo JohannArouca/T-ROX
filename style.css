@@ -1,7 +1,68 @@
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", 
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1B1B;
+    transition: all .5s ease;
+}
+
+nav img {
+    max-width: 2%;
+    height: auto;
+    margin: 0 3%;
+    cursor: pointer;
+}
+
+nav #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 3%;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D1D1D1;
+    text-decoration: none;
+    font-weight: bold;
+    height: 60px;
+    padding: 0 20px;
+    transition: all .5s ease;
+}
+
+nav a.active, nav a:hover {
+    background-color: #545454; 
+    border-bottom: 5px solid white;
+}
+
+svg {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: 30px;
+    font-size: inherit;
+    color: red;
 }
 
 .column {
