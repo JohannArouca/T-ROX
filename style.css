@@ -55,21 +55,27 @@ nav a.active, nav a:hover {
     border-bottom: 5px solid white;
 }
 
-svg {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-    width: 30px;
-    font-size: inherit;
-    color: red;
-}
-
-.column {
+#inicio #image-column, #text-column {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 600px) {
+    #inicio #image-column {
+        align-items: end;
+    }
+    
+    #inicio #text-column {
+        align-items: start;
+    }
+
+    #inicio #image-column img {
+        max-width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
 }
 
 .dark-background {
@@ -79,6 +85,12 @@ svg {
     max-width: 100%;
     width: 100vw;
     min-height: 100vh;
+}
+
+@media(max-width: 600px) {
+    .dark-background {
+        flex-direction: column;
+    }
 }
 
 #opening-logo {
@@ -92,4 +104,10 @@ svg {
     flex: 1;
     color: #D1D1D1;
     font-size: 2em;
+}
+
+@media(max-width: 600px) {
+    #opening-text {
+        font-size: 1em;
+    }
 }
