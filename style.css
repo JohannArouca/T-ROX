@@ -9,6 +9,10 @@ body {
     font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", 
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -55,7 +59,7 @@ nav a.active, nav a:hover {
     border-bottom: 5px solid white;
 }
 
-#inicio #image-column, #text-column {
+#home #image-column, #text-column {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -63,32 +67,38 @@ nav a.active, nav a:hover {
 }
 
 @media(max-width: 600px) {
-    #inicio #image-column {
+    #home #image-column {
         align-items: end;
     }
     
-    #inicio #text-column {
+    #home #text-column {
         align-items: start;
     }
 
-    #inicio #image-column img {
+    #home #image-column img {
         max-width: 90%;
         height: auto;
         margin-top: 50px;
     }
 }
 
-.dark-background {
+.background {
     display: flex;
+    box-sizing: border-box;
     margin: 0;
-    background-color: #303030;
+    padding-top: 80px;
+    background-color: #D1D1D1;
     max-width: 100%;
     width: 100vw;
     min-height: 100vh;
 }
 
+.dark {
+    background-color: #303030;
+}
+
 @media(max-width: 600px) {
-    .dark-background {
+    .background {
         flex-direction: column;
     }
 }
@@ -110,4 +120,42 @@ nav a.active, nav a:hover {
     #opening-text {
         font-size: 1em;
     }
+}
+
+#members-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#members .title {
+    margin: 0;
+    margin-left: 50px;
+    font-size: 3em;
+    color: #303030;
+}
+
+#member {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    width: 50%;
+}
+
+.member-name {
+    margin: 0;
+    font-size: 2em;
+}
+
+.member-photo {
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+    margin: 0 50px
+}
+
+.member-text {
+    margin-bottom: 0;
+    text-align: justify;
 }
