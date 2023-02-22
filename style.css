@@ -135,12 +135,57 @@ nav a.active, nav a:hover {
     color: #303030;
 }
 
+@media(max-width: 600px) {
+    #members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #members .title {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+
 #member {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 10px;
     width: 50%;
+}
+
+#member .mobile {
+    display: none;
+}
+
+#member .desktop {
+    display: flex;
+}
+
+@media(max-width: 600px) {
+    #member {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    #member div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #member .mobile {
+        display: flex;
+    }
+    
+    #member .desktop {
+        display: none;
+    }
 }
 
 .member-name {
@@ -153,6 +198,14 @@ nav a.active, nav a:hover {
     width: 250px;
     height: auto;
     margin: 0 50px
+}
+
+@media(max-width: 600px) {
+    .member-photo {
+        width: 200px;
+        height: auto;
+        margin: 20px;
+    }
 }
 
 .member-text {
