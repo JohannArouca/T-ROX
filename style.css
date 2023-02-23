@@ -191,6 +191,7 @@ nav a.active, nav a:hover {
 .member-name {
     margin: 0;
     font-size: 2em;
+    color: #303030;
 }
 
 .member-photo {
@@ -211,4 +212,5 @@ nav a.active, nav a:hover {
 .member-text {
     margin-bottom: 0;
     text-align: justify;
+    color: #303030;
 }
