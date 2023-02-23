@@ -6,7 +6,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", 
+    font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial";
+    background-color: #303030;
 }
 
 .flex-column {
@@ -79,6 +80,18 @@ nav a.active, nav a:hover {
         max-width: 90%;
         height: auto;
         margin-top: 50px;
+    }
+}
+
+#banner-home {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+@media(max-width: 600px) {
+    #banner-home {
+        margin-top: 60px;
     }
 }
 
