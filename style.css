@@ -60,7 +60,7 @@ nav a.active, nav a:hover {
     border-bottom: 5px solid white;
 }
 
-#home #image-column, #text-column {
+#about #image-column, #text-column {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -68,29 +68,29 @@ nav a.active, nav a:hover {
 }
 
 @media(max-width: 600px) {
-    #home #image-column {
+    #about #image-column {
         align-items: end;
     }
     
-    #home #text-column {
+    #about #text-column {
         align-items: start;
     }
 
-    #home #image-column img {
+    #about #image-column img {
         max-width: 90%;
         height: auto;
         margin-top: 50px;
     }
 }
 
-#banner-home {
+#home {
     width: 100%;
     height: auto;
     margin: 0;
 }
 
 @media(max-width: 600px) {
-    #banner-home {
+    #home {
         margin-top: 60px;
     }
 }
