@@ -87,7 +87,7 @@ nav a.active, nav a:hover {
 
 @media(max-width: 600px) {
     #about #image-column {
-        align-items: end;
+        display: none;
     }
     
     #about #text-column {
@@ -135,21 +135,38 @@ nav a.active, nav a:hover {
     }
 }
 
-#opening-logo {
+#about {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 60px 0;
+    max-width: 100%;
+    width: 100vw;
+}
+
+@media(min-width: 601px) {
+    #about {
+        min-height: 100vh;
+    }
+}
+
+
+#about-logo {
     flex: 1;
     max-width: 50%;
     height: auto;
 }
 
-#opening-text {
+#about-text {
     padding: 10%;
     flex: 1;
     color: #D1D1D1;
     font-size: 2em;
+    text-align: justify;
 }
 
 @media(max-width: 600px) {
-    #opening-text {
+    #about-text {
         font-size: 1em;
     }
 }
