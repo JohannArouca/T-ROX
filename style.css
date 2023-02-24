@@ -14,6 +14,24 @@ body {
     flex-direction: column;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: flex;
+}
+
+@media(max-width: 600px) {
+    .mobile {
+        display: flex;
+    }
+    
+    .desktop {
+        display: none;
+    }
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -85,18 +103,13 @@ nav a.active, nav a:hover {
 
 #home {
     width: 100%;
-    max-height: 100vh;
     height: auto;
-    object-fit: none;
-    object-position: top;
     margin: 0;
+    margin-top: 60px;
 }
 
 @media(max-width: 600px) {
     #home {
-        width: 100%;
-        height: auto;
-        object-fit: fill;
         margin-top: 60px;
     }
 }
@@ -175,14 +188,6 @@ nav a.active, nav a:hover {
     width: 50%;
 }
 
-#member .mobile {
-    display: none;
-}
-
-#member .desktop {
-    display: flex;
-}
-
 @media(max-width: 600px) {
     #member {
         flex-direction: column;
@@ -196,14 +201,6 @@ nav a.active, nav a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    #member .mobile {
-        display: flex;
-    }
-    
-    #member .desktop {
-        display: none;
     }
 }
 
