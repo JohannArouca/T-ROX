@@ -37,7 +37,6 @@ nav {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     max-width: 100%;
     width: 100vw;
@@ -46,14 +45,22 @@ nav {
     transition: all .5s ease;
 }
 
+nav #logo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav img {
-    max-width: 2%;
+    max-width: 40px;
     height: auto;
     margin: 0 3%;
     cursor: pointer;
 }
 
 nav #menu {
+    flex: 6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +68,7 @@ nav #menu {
     margin: 0 3%;
 }
 
-nav a {
+nav #menu a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,9 +80,37 @@ nav a {
     transition: all .5s ease;
 }
 
-nav a.active, nav a:hover {
+nav #menu a.active, nav #menu a:hover {
     background-color: #545454; 
     border-bottom: 5px solid white;
+}
+
+nav #social-medias {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #social-medias .social-media {
+    background-color: #D1D1D1;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav #social-medias .social-media:hover, nav #social-medias .social-media:active {
+    background-color: #303030;
+}
+
+nav #social-medias a {
+    text-decoration: none;
+    color: #303030;
+    cursor: pointer;
+    padding: 7px;
+}
+
+nav #social-medias a:hover, nav #social-medias a:active {
+    color: #D1D1D1;
 }
 
 #about #image-column, #text-column {
