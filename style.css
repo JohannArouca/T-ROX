@@ -80,7 +80,7 @@ nav #menu a {
     transition: all .5s ease;
 }
 
-nav #menu a.active, nav #menu a:hover {
+nav #menu a:hover {
     background-color: #545454; 
     border-bottom: 5px solid white;
 }
@@ -98,7 +98,7 @@ nav #social-medias .social-media {
     margin: 10px;
 }
 
-nav #social-medias .social-media:hover, nav #social-medias .social-media:active {
+nav #social-medias .social-media:hover {
     background-color: #303030;
 }
 
@@ -109,7 +109,7 @@ nav #social-medias a {
     padding: 7px;
 }
 
-nav #social-medias a:hover, nav #social-medias a:active {
+nav #social-medias a:hover {
     color: #D1D1D1;
 }
 
