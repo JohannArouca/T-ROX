@@ -212,10 +212,13 @@ nav #social-medias a:hover {
     align-items: center;
 }
 
-#members .title {
+.title {
     margin: 0;
     margin-left: 50px;
     font-size: 3em;
+}
+
+#members .title {
     color: #303030;
 }
 
@@ -226,7 +229,7 @@ nav #social-medias a:hover {
         align-items: center;
     }
     
-    #members .title {
+    .title {
         margin: 0;
         margin-bottom: 50px;
     }
@@ -281,4 +284,42 @@ nav #social-medias a:hover {
     margin-bottom: 0;
     text-align: justify;
     color: #303030;
+}
+
+#set-list .title {
+    color: #D1D1D1;
+}
+
+#set-list-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #D1D1D1;
+}
+
+#set-list p {
+    font-size: 1.5em;
+}
+
+#set-list #set-lists {
+    display: flex;
+}
+
+#set-lists h3 {
+    font-size: 1.5em;
+}
+
+#set-lists div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#set-lists li {
+    font-size: 1.2em;
+    margin: 8px
 }
