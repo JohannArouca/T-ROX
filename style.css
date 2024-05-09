@@ -3,10 +3,15 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family:'nexaHeavy';
+    src:url("./assets/fonts/Nexa-Heavy.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial";
+    font-family: nexaHeavy, "Roboto", "Helvetica Neue", "Helvetica",  "Arial";
     background-color: #303030;
 }
 
