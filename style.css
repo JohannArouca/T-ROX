@@ -75,7 +75,7 @@ nav #menu a {
     color: #D1D1D1;
     text-decoration: none;
     font-weight: bold;
-    height: 60px;
+    height: 400px 60px;
     padding: 0 20px;
     transition: all .5s ease;
 }
@@ -113,39 +113,56 @@ nav #social-medias a:hover {
     color: #D1D1D1;
 }
 
-#about #image-column, #text-column {
-    flex: 1;
+.home {
+    background-image: url("assets/banner-home-desktop.JPG");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+
+.home .home-content {
+    height: 25%;
+    padding: 20px 100px 0 100px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.home .home-content .home-content-logo {
+    height: 100%;
+    margin: 0 30px;
+}
+
+.home .home-content #home-content-text {
+    color: #303030;
+    font-size: 1.6em;
+    text-align: justify;
+    margin: 0 30px;
+}
+
 @media(max-width: 600px) {
-    #about #image-column {
-        display: none;
+    .home {
+        background-image: url("assets/banner-home-mobile.JPG");
+    }
+
+    .home .home-content {
+        height: 30%;
+        padding: 10px 10px 0 10px;
+        flex-direction: column;
+    }
+
+    .home .home-content .home-content-logo {
+        height: 40%;
     }
     
-    #about #text-column {
-        align-items: start;
-    }
-
-    #about #image-column img {
-        max-width: 90%;
-        height: auto;
-        margin-top: 50px;
-    }
-}
-
-#home {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-top: 60px;
-}
-
-@media(max-width: 600px) {
-    #home {
-        margin-top: 60px;
+    .home .home-content #home-content-text {
+        font-size: 1em;
+        margin: 0 10px;
     }
 }
 
@@ -167,42 +184,6 @@ nav #social-medias a:hover {
 @media(max-width: 600px) {
     .background {
         flex-direction: column;
-    }
-}
-
-#about {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 60px 0;
-    max-width: 100%;
-    width: 100vw;
-}
-
-@media(min-width: 601px) {
-    #about {
-        min-height: 100vh;
-    }
-}
-
-
-#about-logo {
-    flex: 1;
-    max-width: 50%;
-    height: auto;
-}
-
-#about-text {
-    padding: 10%;
-    flex: 1;
-    color: #D1D1D1;
-    font-size: 2em;
-    text-align: justify;
-}
-
-@media(max-width: 600px) {
-    #about-text {
-        font-size: 1em;
     }
 }
 
