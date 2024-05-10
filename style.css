@@ -118,7 +118,7 @@ nav #social-medias a:hover {
     color: #D1D1D1;
 }
 
-.home {
+#home {
     background-image: url("assets/banner-home-desktop.JPG");
     background-color: #cccccc;
     height: 100vh;
@@ -129,7 +129,7 @@ nav #social-medias a:hover {
 }
 
 
-.home .home-content {
+#home .home-content {
     height: 25%;
     padding: 20px 100px 0 100px;
     display: flex;
@@ -138,12 +138,12 @@ nav #social-medias a:hover {
     align-items: center;
 }
 
-.home .home-content .home-content-logo {
+#home .home-content .home-content-logo {
     height: 100%;
     margin: 0 30px;
 }
 
-.home .home-content #home-content-text {
+#home .home-content #home-content-text {
     color: #303030;
     font-size: 1.6em;
     text-align: justify;
@@ -151,21 +151,21 @@ nav #social-medias a:hover {
 }
 
 @media(max-width: 600px) {
-    .home {
+    #home {
         background-image: url("assets/banner-home-mobile.JPG");
     }
 
-    .home .home-content {
+    #home .home-content {
         height: 30%;
         padding: 10px 10px 0 10px;
         flex-direction: column;
     }
 
-    .home .home-content .home-content-logo {
+    #home .home-content .home-content-logo {
         height: 40%;
     }
     
-    .home .home-content #home-content-text {
+    #home .home-content #home-content-text {
         font-size: 1em;
         margin: 0 10px;
     }
