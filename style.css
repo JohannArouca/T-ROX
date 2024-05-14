@@ -27,7 +27,7 @@ body {
     display: flex;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
     .mobile {
         display: flex;
     }
@@ -131,7 +131,7 @@ nav #social-medias a:hover {
 
 #home .home-content {
     height: 25%;
-    padding: 20px 100px 0 100px;
+    padding: 2% 10% 0 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -150,7 +150,22 @@ nav #social-medias a:hover {
     margin: 0 30px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 1536px) {   
+    #home .home-content {
+        padding: 2% 8% 0 8%;
+    }
+    
+    
+    #home .home-content .home-content-logo {
+        height: 90%;
+    }
+    
+    #home .home-content #home-content-text {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 640px) {
     #home {
         background-image: url("assets/banner-home-mobile.JPG");
     }
@@ -186,7 +201,7 @@ nav #social-medias a:hover {
     background-color: #303030;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
     .background {
         flex-direction: column;
     }
@@ -208,7 +223,7 @@ nav #social-medias a:hover {
     color: #303030;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
     #members {
         display: flex;
         justify-content: center;
@@ -229,7 +244,7 @@ nav #social-medias a:hover {
     width: 50%;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
     #member {
         flex-direction: column;
         margin: 0;
@@ -258,7 +273,7 @@ nav #social-medias a:hover {
     margin: 0 50px
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
     .member-photo {
         width: 200px;
         height: auto;
