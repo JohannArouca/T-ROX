@@ -121,11 +121,15 @@ nav #social-medias a:hover {
 #home {
     background-image: url("assets/banner-home-desktop.JPG");
     background-color: #cccccc;
-    height: 100vh;
+    height: calc(100vh - 60px);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
 
@@ -148,6 +152,42 @@ nav #social-medias a:hover {
     font-size: 1.6em;
     text-align: justify;
     margin: 0 30px;
+}
+
+#home .home-footer {
+    padding: 0 10% 2% 10%;
+}
+
+#home .home-footer .divider-line {
+    height: 8px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+
+#home .home-footer .home-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#home .home-footer .phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#home .home-footer i, #home .home-footer .social-media a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 36px;
 }
 
 @media(max-width: 1536px) {   
@@ -181,8 +221,12 @@ nav #social-medias a:hover {
     }
     
     #home .home-content #home-content-text {
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 0 10px;
+    }
+
+    #home .home-footer i, #home .home-footer .social-media a {
+        font-size: 24px;
     }
 }
 
