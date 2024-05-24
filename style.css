@@ -271,7 +271,6 @@ header .social-media a:hover {
         padding: 0 8% 0 8%;
     }
     
-    
     #home .home-content .home-content-logo {
         height: 80%;
     }
@@ -284,6 +283,8 @@ header .social-media a:hover {
 @media(max-width: 640px) {
     #home {
         background-image: url("assets/banner-home-mobile.JPG");
+        padding-top: 30px;
+        height: calc(100vh - 30px);
     }
 
     #home .home-content {
@@ -301,8 +302,16 @@ header .social-media a:hover {
         margin: 0 10px;
     }
 
-    #home .home-footer i, #home .home-footer .social-media a {
-        font-size: 24px;
+    #home .home-footer .divider-line {
+        height: 5px;
+    }
+
+    #home .home-footer i, #home .home-footer .social-media a  {
+        font-size: 20px;
+    }
+
+    #home .home-footer span {
+        font-size: 0.9em;
     }
 }
 
