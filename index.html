@@ -9,24 +9,47 @@
     <title>T-ROX</title>
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <img src="assets/white-logo.png" alt="T-ROX logo" href="#home">
+    <header class="desktop">
+        <div class="logo">
+            <a href="#home">
+                <img src="assets/white-text-logo.png" alt="T-ROX logo">
+            </a>
         </div>
-        <div id="menu">
+
+        <menu>
             <a href="#home">Início</a>
             <a href="#members">Integrantes</a>
-            <!-- <a href="#set-list">Repertório</a> -->
+        </menu>
+
+        <div class="social-media">
+            <a target="_blank" rel="noreferrer" class="fa fa-instagram" href="https://www.instagram.com/t_rox_band/"></a>
+            <a target="_blank" rel="noreferrer" class="fa fa-youtube-play" href="https://www.youtube.com/@t-roxband"></a>
+            <a target="_blank" rel="noreferrer" class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100086764775451"></a>
         </div>
-        <div id="social-medias">
-            <div class="social-media">
-                <a target="_blank" rel="noreferrer" class="fa fa-instagram" href="https://www.instagram.com/t_rox_band/"></a>
-            </div>
-            <div class="social-media">
-                <a target="_blank" rel="noreferrer" class="fa fa-youtube-play" href="https://www.youtube.com/@t-roxband"></a>
-            </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile">
+        <div class="logo">
+            <a href="#home">
+                <img src="assets/white-logo.png" alt="T-ROX logo">
+            </a>
         </div>
-    </nav>
+        
+        <menu>
+            <a href="#home">Início</a>
+            <a href="#members">Integrantes</a>
+        </menu>
+
+        <div class="social-media">
+            <a target="_blank" rel="noreferrer" class="fa fa-instagram" href="https://www.instagram.com/t_rox_band/"></a>
+            <a target="_blank" rel="noreferrer" class="fa fa-youtube-play" href="https://www.youtube.com/@t-roxband"></a>
+            <a target="_blank" rel="noreferrer" class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100086764775451"></a>
+        </div>
+    </div>
+
+    <button id="menu-toggle" class="mobile">
+        <i class="fa fa-bars"></i>
+    </button>
 
     <div id="home">
         <div class="home-content">
@@ -163,5 +186,7 @@
             </div>
         </div>
     </div> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
