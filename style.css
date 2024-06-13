@@ -423,8 +423,8 @@ header .social-media a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 20px 0;
+    width: 90%;
+    padding: 20px;
 }
 
 .video-container {
@@ -457,7 +457,7 @@ header .social-media a:hover {
     justify-content: center;
     color: #D1D1D1;
     border: 2px solid #D1D1D1;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 10px 20px;
     font-size: 1.1em;
     font-weight: bold;
